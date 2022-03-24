@@ -2,8 +2,7 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -15,7 +14,6 @@ function App() {
         >
           Learn React
         </a>
-      </header>
     </div>
   );
 }
