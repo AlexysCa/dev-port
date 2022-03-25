@@ -1,30 +1,18 @@
-import React from "react";
+import Nav from "../Nav";
 
-function Nav(props) {
+function Header(props) {
 
-    const { 
-        navSections,
-        setCurrentSection,
-        currentSection
-    } = props;
-
-return (
-    <nav>
-        <ul>
-            {navSections.map((section) => (
-                <li key={section}>
-                    <a href={["#",section.toLowerCase().replace(/\s/g, '')].join('')}
-                        onClick={() => {
-                            setCurrentSection(section);  
-                        }}
-                        className={ currentSection === section ? "nav-active" : "nav-inactive" } >
-                            {section}
-                        </a>
-                    </li>
-                ))}
-            </ul>
-        </nav>
+    return (
+        <header>
+            <section>
+                <h1>Alexys Carrasquillo</h1>
+            </section>
+            <Nav
+            navSections={props.navSections}
+            setCurrentSection={props.setCurrentSection}
+            currentSection={props.currentSection} ></Nav>
+        </header>
     )
 };
 
-export default Nav;
+export default Header;
