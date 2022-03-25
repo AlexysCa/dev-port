@@ -4,6 +4,7 @@ import Header from './components/Header';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
 import ContactForm from './components/Contact';
+import Resume from './components/Resume';
 import Footer from './components/Footer';
 
 function App() {
@@ -24,8 +25,7 @@ function App() {
     } else if (currentSection === "Contact") {
       return <ContactForm />
     } else if (currentSection === "Resume") {
-      return <About />
-      // need to add resume section
+      return <Resume />
     } else {
       return <About />
     }
