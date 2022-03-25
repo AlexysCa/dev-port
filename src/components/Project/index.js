@@ -1,0 +1,2 @@
+require('../Project/izmir.css');
+
