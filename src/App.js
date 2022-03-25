@@ -1,22 +1,42 @@
 import './App.css';
-import React from 'react';
-import Nav from './components/Header/Nav';
-import About from './components/Header/Nav/About';
-import ContactForm from './components/Header/Nav/Contact';
+import React, { useState } from 'react';
+import Header from './components/Header';
+import About from './components/About';
+import Portfolio from './components/Portfolio';
+import ContactForm from './components/Contact';
 import Footer from './components/Footer';
+import '../src/components/Project/izmir.css';
 
 function App() {
-  return (
-    <div>
-      <Nav></Nav>
-       <main>
-         <About></About>
-         
-           <ContactForm></ContactForm>
 
-           <Footer />
-       </main>
-    </div>
+  const [currentSection, setCurrentSection] = useState("About");
+  const [navSections] = useState([
+    "About",
+    "Works",
+    "Contact",
+    "Resume",
+  ]);
+
+  const navDisplay = () => {
+    if (currentSection === "About") {
+      return <About />
+    } else if (currentSection === "Works") {
+      return <Portfolio />
+    } else if (currentSection === "Contact") {
+      return <ContactForm />
+    } else if (currentSection === "Resume") {
+      return <About />
+      // need to add resume section
+    } else {
+      return <About />
+    }
+  }
+  return (
+   <main>
+     <Header currentSection={currentSection} setCurrentSection={setCurrentSection} navSections={navSections} />
+     {navDisplay()}
+     <Footer />
+   </main>
   );
 }
 
