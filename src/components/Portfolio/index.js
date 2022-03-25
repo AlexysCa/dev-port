@@ -1,3 +1,4 @@
+import Project from "../Project";
 
 const projects = [
     {
@@ -53,3 +54,21 @@ const projects = [
      imgAlt: "Home page of Horiseon marketing website" 
     }
 ]
+
+function Portfolio() {
+
+    return (
+        <section className="portfolio-container">
+            <h2>Works</h2>
+            <ul className="portfolio-list">
+                {projects.map((project) => (
+                    <li key={project.id}>
+                        <Project project={project} />
+                    </li>
+                ))}
+            </ul>
+        </section>
+    )
+};
+
+export default Portfolio;
