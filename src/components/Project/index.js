@@ -1,12 +1,11 @@
 // using IZMIR imagehover css library for style and design of projects 
-// import React from "react";
 require('../../assets/styles/izmir.css');
 
 const Project = ({ project }) => {
 
     return (
         <section className='project-container'>
-           <figure className='c4-izmir c4-border-fade c4-gradient-top tabindex="0"'>
+           <figure class='c4-izmir c4-border-fade c4-gradient-top tabindex="0"'>
                <img className='proj-img'
                src={require(`../../assets/images/photo-${project.key}.png`)}
                alt={project.imgAlt}
@@ -15,6 +14,9 @@ const Project = ({ project }) => {
             <figcaption className='c4-layout-top-center'>
                 <div className='c4-fade-up'>
                     <h3>{project.title}</h3>
+                    <div className='proj-text'>
+                        <p><span>Links:</span><a href={project.github}>GitHub</a> || <a href={project.URL}>Live App</a></p>
+                    </div>
                 </div>
             </figcaption>
            </figure>

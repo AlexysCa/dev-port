@@ -684,7 +684,7 @@
   transform: rotate(90deg); }
 
 .c4-gradient-top {
-  background-image: linear-gradient(180deg, #00B4DB 0%, #0083B0 100%);
+  background-image: linear-gradient(180deg, var(--primary-color) 0%, var(--secondary-color) 100%);
   background-image: linear-gradient(180deg, var(--primary-color) 0%, var(--secondary-color) 100%); }
 .c4-gradient-left {
   background-image: linear-gradient(90deg, #00B4DB 0%, #0083B0 100%);
