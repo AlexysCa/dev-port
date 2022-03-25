@@ -5,7 +5,6 @@ import About from './components/About';
 import Portfolio from './components/Portfolio';
 import ContactForm from './components/Contact';
 import Footer from './components/Footer';
-import '../src/components/Project/izmir.css';
 
 function App() {
 
@@ -33,6 +32,7 @@ function App() {
   }
   return (
    <main>
+     <link rel='stylesheet' href='css/izmir.css'></link>
      <Header currentSection={currentSection} setCurrentSection={setCurrentSection} navSections={navSections} />
      {navDisplay()}
      <Footer />

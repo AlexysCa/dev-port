@@ -1,11 +1,11 @@
 // using IZMIR imagehover css library for style and design of projects 
-require('../Project/izmir.css');
 
 
 function Project(project) {
 
     return (
         <section className='project-container'>
+            <link rel='stylesheet' href='css/izmir.css'></link>
            <figure className='c4-izmir c4-border-fade c4-gradient-top '>
                <img className='proj-img'
                src={require(`../../assets/images/${project.key}.png`).default}
