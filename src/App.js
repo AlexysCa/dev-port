@@ -11,7 +11,7 @@ function App() {
   const [currentSection, setCurrentSection] = useState("About");
   const [navSections] = useState([
     "About",
-    "Works",
+    "Portfolio",
     "Contact",
     "Resume",
   ]);
@@ -19,7 +19,7 @@ function App() {
   const navDisplay = () => {
     if (currentSection === "About") {
       return <About />
-    } else if (currentSection === "Works") {
+    } else if (currentSection === "Portfolio") {
       return <Portfolio />
     } else if (currentSection === "Contact") {
       return <ContactForm />
