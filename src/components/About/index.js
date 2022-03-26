@@ -3,9 +3,9 @@ import Headshot from '../../assets/images/Alexys_Icon.JPG';
 
 function About() {
     return (
-        <section className="about-container">
-            <h2>Hi, this is me!</h2>
-        <section>
+        <section className=" flex-row about-container">
+            <h2 className="section-title">Meet Alexys!</h2>
+        <section className="flex-row section-info about-info">
             <section className="about-img">
                 <img src={Headshot} alt="Alexys Carrasquillo" />
             </section>
