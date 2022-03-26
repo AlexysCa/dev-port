@@ -21,6 +21,7 @@ const projects = [
      id: 3,
      title: "ORM - Ecommerce Back End",
      key: 'orm',
+     github: "https://github.com/AlexysCa/commerence-the-back-end",
      URL: "https://github.com/AlexysCa/commerence-the-back-end",
      image: "../../assets/images/photo-orm.png",
      imgAlt: "Back end testing in Insomnia"   
@@ -29,6 +30,7 @@ const projects = [
      id: 4,
      title: "NoSQL - Social Network API",
      key: 'NoSQL',
+     github: "https://github.com/AlexysCa/The-Social-Network-NoSQLv",
      URL: "https://github.com/AlexysCa/The-Social-Network-NoSQLv",
      image: "../../assets/images/photo-NoSQL.png",
      imgAlt: "NoSQL testing in Insomnia"   
