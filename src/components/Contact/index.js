@@ -31,9 +31,9 @@ function ContactForm() {
     };
 
 return (
-    <section>
-        <h1>Contact me at alexys.carrasquillo@gmail.com</h1>
-        <form id="contact-form" onSubmit={handleSubmit}>
+    <section className="contact-container flex-row">
+        <h1 className="section-title">Contact me at alexys.carrasquillo@gmail.com</h1>
+        <form className="contact-form flex-row" onSubmit={handleSubmit}>
             <div>
                 <label>Name:</label>
                 <input type="text" name="name" defaultValue={name} onBlur={handleChange} />

@@ -8,7 +8,7 @@ function Footer() {
 
 return (
     <footer>
-        <section>
+        <section className="footer-container">
             <ul>
                 <li>
                     <a href="https://www.linkedin.com/in/alexys-carrasquillo-a310a9161/">
