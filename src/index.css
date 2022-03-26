@@ -118,14 +118,14 @@ footer {
 }
 
 footer h2 {
-  color: white;
-  font-size: 10px;
+  color: var(--black);
+  font-size: 15px;
   text-align: center;
-  font-weight: 300;
+  font-weight: bold;
   padding: 5px;
 }
 
-footer ul li {
+footer ul, li {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -137,13 +137,17 @@ footer ul li {
 
 }
 
-footer li a {
+footer li, a {
   text-decoration: none;
   list-style-type: none;
 }
 
 footer svg {
   fill: white;
+}
+
+footer svg:hover {
+  fill: #EFAAC4;
 }
 
 /* about section styling starts here */
