@@ -3,8 +3,9 @@ import MyPNG from '../../assets/images/Resume.png';
 function Resume() {
 
     return (
-        <section className="resume-container">
+        <section className="resume-container flex-row">
             <h2 className="section-title"> Resume </h2>
+            <section className='resume-section'>
             <div>
             <a href={MyPNG} download="Alexys_Resume.jpg">
             Download my Resume Here
@@ -27,6 +28,7 @@ function Resume() {
                     </ul>
                 </p>
             </div>
+            </section>
         </section>
     )
 
