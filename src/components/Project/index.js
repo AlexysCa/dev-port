@@ -13,9 +13,9 @@ const Project = ({ project }) => {
                </img>
             <figcaption className='c4-layout-top-center'>
                 <div className='c4-fade-up'>
-                    <h3>{project.title}</h3>
+                    <h3> {project.title} </h3>
                     <div className='proj-text'>
-                        <p><span>Links:</span><a href={project.github}>GitHub</a> || <a href={project.URL}>Live App</a></p>
+                        <p><a href={project.github}>GitHub</a> || <a href={project.URL}>Live App</a></p>
                     </div>
                 </div>
             </figcaption>

@@ -6,7 +6,7 @@ function Portfolio() {
 
     return (
         <section className="portfolio-container">
-            <h2 className="section-title"> My Projects</h2>
+            <h2 className="section-title"> Projects</h2>
             <ul className="portfolio-list">
                 {projects.map((project) => (
                     <li className="one-project" key={project.id}>
