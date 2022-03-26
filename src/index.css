@@ -74,15 +74,62 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-  border-bottom: #9368B7 solid 1px;
+  border-bottom: #9BC53D solid 1px;
 }
 
 .nav-active {
-  border-bottom: #9368B7 solid 1px;
+  border-bottom: #9BC53D solid 1px;
 }
 
 .nav-inactive {
   border-bottom: none;
+}
+
+/* footer stying starts here*/
+footer {
+  text-align: center;
+  background: linear-gradient(80deg, #5BC0EB, var(--green));
+  height: 40px;
+  align-items: center;
+  margin-top: 60px;
+  box-shadow: 0 0 10px;
+  position: fixed;
+  padding: 10px 10px 0px 10px;
+  bottom: 0;
+  width: 100%;
+}
+
+footer h2 {
+  color: white;
+  font-size: 10px;
+  text-align: center;
+  font-weight: 300;
+  padding: 5px;
+}
+
+footer ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding-bottom: 20px;
+  text-decoration: none;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+
+footer li a {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+footer svg {
+  fill: white;
+}
+
+.content {
+  min-height: calc(100vh - 600px);
 }
 
 code {
