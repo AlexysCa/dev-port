@@ -7,7 +7,7 @@ In this portfolio you will find a bio and photo of Alexys, six of her projects, 
 ### Tools:
 * JavaScript
 * React 
-*Gh-pages
+* Gh-pages
 
 ## Link To Portfolio
 https://alexysca.github.io/dev-port/
