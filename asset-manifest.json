@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/dev-port/static/css/main.0a64158b.css",
+    "main.js": "/dev-port/static/js/main.5d882fee.js",
+    "static/js/787.e18f6452.chunk.js": "/dev-port/static/js/787.e18f6452.chunk.js",
+    "static/media/photo-horiseon.png": "/dev-port/static/media/photo-horiseon.1432fd1c5af5eb163f7f.png",
+    "static/media/Alexys_Icon.JPG": "/dev-port/static/media/Alexys_Icon.2b7f3b29f0465ae6e0d8.JPG",
+    "static/media/Resume.png": "/dev-port/static/media/Resume.2523c300d2be7067d877.png",
+    "static/media/photo-orm.png": "/dev-port/static/media/photo-orm.e6f66a93da62fea999b6.png",
+    "static/media/photo-NoSQL.png": "/dev-port/static/media/photo-NoSQL.3c76e70685e30e7d9f31.png",
+    "static/media/photo-js_password.png": "/dev-port/static/media/photo-js_password.2042203a27953dc627c9.png",
+    "static/media/photo-code_quiz.png": "/dev-port/static/media/photo-code_quiz.a37922ab395c78cf599d.png",
+    "static/media/photo-express_note.png": "/dev-port/static/media/photo-express_note.68153cb5def2a13748cd.png",
+    "index.html": "/dev-port/index.html",
+    "main.0a64158b.css.map": "/dev-port/static/css/main.0a64158b.css.map",
+    "main.5d882fee.js.map": "/dev-port/static/js/main.5d882fee.js.map",
+    "787.e18f6452.chunk.js.map": "/dev-port/static/js/787.e18f6452.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0a64158b.css",
+    "static/js/main.5d882fee.js"
+  ]
+}
