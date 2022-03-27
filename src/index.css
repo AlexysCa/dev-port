@@ -166,10 +166,11 @@ footer svg:hover {
   padding-bottom: 30px;
   margin-bottom: 10px;
   margin-top: 10px;
+  width: 60%;
 }
 
 .about-img {
-  flex: 1 20%;
+  flex: 1 15%;
   margin-right: 20px;
 }
 
@@ -183,6 +184,10 @@ footer svg:hover {
   flex: 12;
   padding: 15px;
   font: 16px;
+}
+
+.about-bio span {
+  color: #9368B7;
 }
 
 /* portfolio/project section styling starts here */
