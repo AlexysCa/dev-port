@@ -11,11 +11,11 @@ const Project = ({ project }) => {
                alt={project.imgAlt}
                >
                </img>
-            <figcaption className='c4-layout-top-center'>
-                <div className='c4-fade-up'>
+            <figcaption className='c4-layout-top-center c4-fade-up'>
+                <div>
                     <h3> {project.title} </h3>
                     <div className='proj-text'>
-                        <p><a href={project.github}>GitHub</a> || <a href={project.URL}>Live App</a></p>
+                        <p><a href={project.github}> GitHub </a> || <a href={project.URL}> Live App </a></p>
                     </div>
                 </div>
             </figcaption>
