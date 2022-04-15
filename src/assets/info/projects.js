@@ -52,6 +52,15 @@ const projects = [
      URL: "https://alexysca.github.io/horiseon-challenge/",
      image: "../../assets/images/photo-horiseon.png",
      imgAlt: "Home page of Horiseon marketing website" 
+    },
+    {
+     id: 7,
+     title: "MERN, GraphQL, JWT, Heroku, React",
+     key: 'mern',
+     github: "https://github.com/jmail1014/habit-social",
+     URL: "https://thawing-sea-89785.herokuapp.com/",
+     image: "../../assets/images/photo-MERN.png",
+     imgAlt: "Habit Tracking Application" 
     }
 ]
 
