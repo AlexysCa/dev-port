@@ -1,28 +1,8 @@
-import React from "react";
 import Headshot from '../../assets/images/Alexys_Icon.JPG';
 
-function About() {
-    return (
-        <section className=" flex-row about-container">
-            <h2 className="section-title">Meet Alexys</h2>
-        <section className="flex-row about-info">
-            <section className="about-img">
-                <img src={Headshot} alt="Alexys Carrasquillo" />
-            </section>
-        <section className="about-bio">
-            <p>
-            This is Alexys Carrasquillo <span>(she/her/hers)</span>. She is currently located in Charlotte, NC and works as a Creative Director for Sunshine Media Network.
-            Alexys graduated from UNC Charlotte's Coding Bootcamp as a Full-Stack Developer in April 2022. Before she began her journey in the coding world, she received her Associates degree in
-            Broadcasting and Production Technology from Central Piedmont. Her first passion was videography. She loved the creativity behind filming and editing a video. 
-            She also loved the challenge in the techinal ascept of it; the cameras, studio lights, and audio equipment. 
-            Figuring out all the new tools pushed her towards her current job title. Where she has creative control on graphic design curation. 
-            She always had the desire to learn about Coding. In 2021, she decided to go back to school and add a new skill to my creative toolbelt. 
-            </p>
-        </section>
-        </section>
-        </section>
-    )
-
-}
+function About() { return ( <section className="flex-row about-container"> <h2 className="section-title">Meet Alexys</h2> <section className="flex-row about-info"> <section className="about-img"> <img src={Headshot} alt="Alexys Carrasquillo" /> </section> <section className="about-bio"> 
+<p className="about-intro"> Alexys Carrasquillo is a Full Stack Web Developer and Technology Operations & Digital Platform Professional with experience spanning web development, digital platforms, creative services, SaaS, and technical product environments. As a UNC Charlotte Full-Stack Web Development Bootcamp graduate, she has hands-on experience building web applications and working with technologies including React, JavaScript, Node.js, Java, SQL, MongoDB, and GraphQL. 
+    <br /> Alexys brings a unique combination of technical, creative, and business perspectives to every project. Her experience includes website development, CMS management, digital platform operations, accessibility, and creative production, giving her a strong understanding of both the technology behind a solution and the people who use it. She enjoys solving problems, learning new technologies, and building digital experiences that are functional, accessible, and meaningful. 
+    <br /> With a background that bridges technology and creativity, Alexys understands that successful digital products require more than just good code. It requires an understanding of business goals, user needs, and stakeholder expectations. </p> <section className="about-focus"> <div> <h3>Technology</h3> <p> Full-stack development, web applications, APIs, databases, and digital platforms. </p> </div> <div> <h3>Operations</h3> <p> Technology operations, digital platforms, process improvement, accessibility, and cross-functional collaboration. </p> </div> <div> <h3>Creative</h3> <p> Digital experiences, visual storytelling, content, design, and creative technology. </p> </div> </section> </section> </section> </section> ); }
 
 export default About;

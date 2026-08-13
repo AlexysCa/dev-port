@@ -1,18 +1,5 @@
 import Nav from "../Nav";
 
-function Header(props) {
-
-    return (
-        <header>
-            <section>
-                <h1>Alexys Carrasquillo</h1>
-            </section>
-            <Nav
-            navSections={props.navSections}
-            setCurrentSection={props.setCurrentSection}
-            currentSection={props.currentSection} ></Nav>
-        </header>
-    )
-};
+function Header({ navSections, setCurrentSection, currentSection }) { return ( <header> <section className="header-brand"> <h1>Alexys Carrasquillo</h1> <p>Full Stack Web Developer | Technology Operations | Digital Platforms</p> </section> <Nav navSections={navSections} setCurrentSection={setCurrentSection} currentSection={currentSection} /> </header> ); }
 
 export default Header;

@@ -1,61 +1,40 @@
-import React, { useState } from "react";
-import { validateEmail } from "../../utils/helpers";
-
 function ContactForm() {
-    const [formState, setFormState] = useState({ name: '', email: '', message: ''});
+    return (
+        <section className="contact-container">
+            <h2 className="section-title">Let's Connect</h2>
 
-    const [errorMessage, setErrorMessage] = useState('');
-    const { name, email, message } = formState;
+            <section className="contact-card">
+                <p>
+                    I'm always interested in connecting with other technology
+                    professionals, developers, creative teams, and organizations
+                    looking for someone who can bridge technology, creativity,
+                    and business.
+                </p>
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        if (!errorMessage) {
-            setFormState({ [e.target.name]: e.target.value });
-            console.log('Form', formState);
-        }
-    };
+                <div className="contact-links">
+                    <a href="mailto:alexys.carrasquillo@gmail.com">
+                        Email Me
+                    </a>
 
-    const handleChange = (e) => {
-        if (e.target.name === 'email') {
-            const isValid = validateEmail(e.target.value);
-        if (!isValid) {
-            setErrorMessage('Your email is invalid');
-        } else {
-            if (!e.target.value.length) {
-                setErrorMessage(`${e.target.name} is required`);
-            } else {
-                setErrorMessage('');
-                }
-            }
-        }
-    };
+                    <a
+                        href="https://github.com/AlexysCa"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        GitHub
+                    </a>
 
-return (
-    <section className="contact-container flex-row">
-        <h1 className="section-title">Contact me at alexys.carrasquillo@gmail.com</h1>
-        <form className="contact-form flex-row" onSubmit={handleSubmit}>
-            <div>
-                <label>Name:</label>
-                <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
-            </div>
-            <div>
-                <label>Email Address:</label>
-                <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
-            </div>
-            <div>
-                <label>Message:</label>
-                <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} />
-            </div>
-            {errorMessage && (
-                <div>
-                    <p>{errorMessage}</p>
+                    <a
+                        href="https://www.linkedin.com/in/alexys-carrasquillo/"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        LinkedIn
+                    </a>
                 </div>
-            )}
-            <button type="submit">Submit</button>
-        </form>
-    </section>
-)
-
+            </section>
+        </section>
+    );
 }
 
-export default ContactForm
+export default ContactForm;

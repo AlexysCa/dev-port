@@ -2,6 +2,7 @@ import {
     FaGithub,
     FaLinkedin,
     FaInstagram,
+    FaSquarespace,
 } from "react-icons/fa";
 
 function Footer() {
@@ -26,7 +27,12 @@ return (
                         </a>
                 </li>
                 <li>
-                    <h2>Made by Alexys &copy; 2022.</h2>
+                    <a href="https://alexyscarrasquillo.com/">
+                        <FaSquarespace size={30} />
+                    </a>
+                </li>
+                <li>
+                    <h2>Made by Alexys &copy; 2026.</h2>
                 </li>
             </ul>
         </section>

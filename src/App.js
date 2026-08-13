@@ -1,39 +1,43 @@
-import './App.css';
 import React, { useState } from 'react';
 import Header from './components/Header';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
 import ContactForm from './components/Contact';
 import Resume from './components/Resume';
+import Skills from './components/Skills';
 import Footer from './components/Footer';
+
 
 function App() {
 
   const [currentSection, setCurrentSection] = useState("About");
-  const [navSections] = useState([
+  const navSections = [
     "About",
+    "Skills",
     "Portfolio",
     "Contact",
-    "Resume",
-  ]);
+    "Tools & Technologies"
+  ];
+
+  const sections = {
+    About: <About />,
+    Skills: <Skills />,
+    Portfolio: <Portfolio />,
+    Contact: <ContactForm />,
+    "Tools & Technologies": <Resume />
+  };
 
   const navDisplay = () => {
-    if (currentSection === "About") {
-      return <About />
-    } else if (currentSection === "Portfolio") {
-      return <Portfolio />
-    } else if (currentSection === "Contact") {
-      return <ContactForm />
-    } else if (currentSection === "Resume") {
-      return <Resume />
-    } else {
-      return <About />
-    }
-  }
+    return sections[currentSection] || <About />;
+  };
+
   return (
    <main>
-     <link rel='stylesheet' href='css/izmir.css'></link>
-     <Header currentSection={currentSection} setCurrentSection={setCurrentSection} navSections={navSections} />
+     <Header
+     currentSection={currentSection}
+     setCurrentSection={setCurrentSection}
+     navSections={navSections}
+     />
      {navDisplay()}
      <Footer />
    </main>
